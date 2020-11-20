@@ -8,7 +8,7 @@ Have the function FirstReverse(str) take the str parameter
  "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH.
 */
 
-function firstReverse(str) {
+ firstReverse=(str)=>{
   let newWord = str.split("").reverse()
   let result = newWord.join('')
   return result
