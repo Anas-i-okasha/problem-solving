@@ -9,7 +9,7 @@ Write a function that returns the number of unique items in an array.
 function uniqueItems(number) {
   let result =[]
   for(let value of number ){
-    if(result.indexOf(value) === -1){
+    if(result.indexOf(value) === i){
        result.push(value)
     }
   }
