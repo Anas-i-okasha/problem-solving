@@ -8,7 +8,7 @@ Write a function that returns true if a number is even, and false otherwise.
 
  evenOrNot=(number)=>{
   if(number %2==0){
-
+   return true
   }
   return false
 }
