@@ -1,4 +1,4 @@
-console.log('Problem Solving Q: 6');
+console.log('Problem Solving Q: 5');
 
 /* Even or Not */
 
