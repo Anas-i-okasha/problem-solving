@@ -7,7 +7,7 @@ Given an integer, n, return n! (n factorial)
 5! = 5 * 4 * 3 * 2 * 1
 */
 
-function factorial(number) {
+ factorial=(number)=> {
   let result = 1;
   if (number == 0 || number == 1){
     return result;

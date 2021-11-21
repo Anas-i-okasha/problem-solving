@@ -6,7 +6,7 @@ console.log('Problem Solving Q:14 ');
 Given an arbitrary input string, return the first non-repeating character. For strings with all repeats, return 'sorry'
 */
 
-function firstNonRepeatedCharacter(str) {
+ firstNonRepeatedCharacter=(str)=> {
    for(let i =0 ; i<str.length ; i++){
      let newArr = str.charAt(i)
       if(str.indexOf(newArr)==i && str.indexOf(newArr,i+1)==-1){

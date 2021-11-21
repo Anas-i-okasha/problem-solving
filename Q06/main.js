@@ -11,10 +11,11 @@ Write a function that returns the sum of odd numbers in an array.
     for(let i=0; numbers.length>i ; i++){
       if(numbers[i] %2 !=0){
         newArr.push(numbers[i])
+        return newArr
       }
     }
-  let result= newArr.reduce((acc , num)=>num+acc,0)
-  return result
+  // let result= newArr.reduce((acc , num)=>num+acc,0)
+  // return result
 }
 
 /* 

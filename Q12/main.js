@@ -8,7 +8,7 @@ Your function should return the common characters in the same order that they ap
 Do not return duplicate characters and ignore whitespace in your returned string.
 */
 
-function commonCharacters(str1 , str2) {
+ commonCharacters=(str1 , str2)=> {
   let newStr1 = str1
   let newStr2 = str2
   let resultStr=[]

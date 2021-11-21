@@ -7,7 +7,7 @@ Given an array of negative/positive integers, return the element in the center p
 If the array has an even number of elements, return the average of the two middle elements instead.
 */
 
-function ArrayMiddle(arr) {
+ArrayMiddle=(arr)=> {
   let middle = arr[Math.round((arr.length-1)/2)]
   if((arr.length /2)!=1){
     return middle

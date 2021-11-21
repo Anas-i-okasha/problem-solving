@@ -15,20 +15,29 @@ longestWord('hello world'); // => 'hello'
 */
 
 // solving ==> //
-console.log('Answwer: Q1') 
+// console.log('Answwer: Q1') 
 
 
- longestWord=(sen)=>{
-  if(sen.length ===0){
-    return 'ther is no 0 word '
-  }
-  let output = '';
-  const words = sen.split(' ');
-  words.forEach((word)=>{
-    if(word.length > output.length){
-    output = word
-    }
-  })
- return output;
+//  longestWord=(sen)=>{
+//   if(sen.length ===0){
+//     return 'ther is no 0 word '
+//   }
+//   let output = '';
+//   const words = sen.split(' ');
+//   // return words
+//   words.forEach((word)=>{
+//     if(word.length > output.length){
+//     output = word
+//     }
+//   })
+//  return output;
  
+// }
+
+TwoInput=(in1,in2)=>{
+  let result=[]
+for(let i=in1;in1<in2; i++){
+return in1
+
+}
 }
