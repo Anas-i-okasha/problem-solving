@@ -11,6 +11,8 @@ def reverse(x):
 
 # print("the reversed text is: "+reverse(text))
 
+
+
 #=========================================================================
 
 ''' Q2 '''
@@ -22,6 +24,8 @@ def reverse(x):
 #The year can be evenly divided by 4, is a leap year, unless:
 #The year can be evenly divided by 100, it is NOT a leap year, unless:
 #The year is also evenly divisible by 400. Then it is a leap year
+
+
 def leapYear(n):
     if n%4 ==0  and n%400==0:
         print (True)
@@ -30,4 +34,7 @@ def leapYear(n):
     else:
         print (False)
 leapYear(1800)
+
+
+
 
