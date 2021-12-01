@@ -32,5 +32,7 @@ if(true==arr[i]){
 return result.length
 }
 
-console.log(countTrue([ false, false, false]))  // => 0
-console.log(countTrue([ true ,false, false, false]))  //=>1  
+// console.log(countTrue([ false, false, false]))  // => 0
+// console.log(countTrue([ true ,false, false, false]))  //=>1 
+
+
