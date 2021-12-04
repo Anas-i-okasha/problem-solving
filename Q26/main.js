@@ -57,3 +57,18 @@ return result / (grades.length)
 }
 console.log(avargeGr([100, 80, 95, 67, 74]))  // 83.2
 console.log(avargeGr([100, 90, 80, 70]))   // => 85
+
+// ================================================================================
+
+// Write a function `sumCubes` that accepts an array and returns the sum of the cubed numbers.
+
+function sumCub(num){
+if(!num.length){
+return 0;
+}
+const res=num.reduce((ele , acc)=>{
+return acc + ele
+})
+return Math.pow(res , 2)
+}
+console.log( sumCub([1,2,3]))
