@@ -10,7 +10,16 @@ function subArr(arr1,arr2){
     return result
 }
 
-console.log(subArr([93,22,7],[-3,4,0]))
+// console.log(subArr([93,22,7],[-3,4,0]))
 
 // ==========================================================================
 
+/* write a function take an array number of integer and return the element most frequancy in the array */
+function mostFreq(array){
+const result = array.filter((item,i)=>{
+if(item ==array[i]){
+return item
+}
+})
+return result
+}
