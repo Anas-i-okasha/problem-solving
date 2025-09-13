@@ -86,3 +86,8 @@ console.log(binarySearch([1,2,3,4,6,8], 4));
 // ============================================================================================
 
 /***************************  Sorting Algorithms  ********************************/
+// 1- Bubble sort
+// 2- selection sort
+// 3- insertion sort
+// 4-merge sort
+// 5- Quick sort
