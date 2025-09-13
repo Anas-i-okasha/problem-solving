@@ -24,6 +24,31 @@ function calculateSacrificeProfit (buyPrices, sellPrices) {
 
 
 
-console.log(calculateSacrificeProfit([100], [150])); // 50
-console.log(calculateSacrificeProfit([100, 200], [150, 230])); // 80
-console.log(calculateSacrificeProfit([100, 150, 200], [100, 150, 200])); // 0
+// console.log(calculateSacrificeProfit([100], [150])); // 50 profit
+// console.log(calculateSacrificeProfit([100, 200], [150, 230])); // 80 profit
+// console.log(calculateSacrificeProfit([100, 150, 200], [100, 150, 200])); // 0 profit
+
+//------------------------------------------------------------------------------------------------------------
+
+/*** Q58
+ * Ramadan fasting hours: calculate total fasting hours in ramadan month
+ */
+
+function calculateRamadanFastingHours(startTimes, endTimes) {
+    // validation
+    if (!startTimes.length || !endTimes.length)
+        throw new Error('no time period provided!!');
+
+    let totalFastingHours = 0, totalFastingMinutes =0;
+
+    for (let i=0; i < startTimes.length; i++) {
+        const [startHours, startMinutes] = startTimes[i].split(':');
+        const [endHours, endMinutes] = endTimes[i].split(':');
+        totalFastingHours += (+endHours) - (+startHours);
+        totalFastingMinutes += (+endMinutes) - (+startMinutes)
+    }
+    return totalFastingHours + totalFastingMinutes / 60;
+}
+
+console.log(calculateRamadanFastingHours(['04:30', '05:00'], ['18:30', '18:00'])) // 27
+console.log(calculateRamadanFastingHours(['04:45'], ['18:15'])) // 13.5
