@@ -12,21 +12,21 @@ function calculateSacrificeProfit (buyPrices, sellPrices) {
 
     let totalProfit = 0;
 
-    for (let i=0; i < buyPrices.length; i++) {
-        if (!sheepSellPrice)
-            continue;
+    // for (let i=0; i < buyPrices.length; i++) {
+    //     if (!sheepSellPrice)
+    //         continue;
 
-        totalProfit += sellPrices[i] - buyPrices[i];
-    }
+    //     totalProfit += sellPrices[i] - buyPrices[i];
+    // }
 
     return totalProfit;
 }
 
 
 
-// console.log(calculateSacrificeProfit([100], [150])); // 50 profit
-// console.log(calculateSacrificeProfit([100, 200], [150, 230])); // 80 profit
-// console.log(calculateSacrificeProfit([100, 150, 200], [100, 150, 200])); // 0 profit
+console.log(calculateSacrificeProfit([100], [150])); // 50 profit
+console.log(calculateSacrificeProfit([100, 200], [150, 230])); // 80 profit
+console.log(calculateSacrificeProfit([100, 150, 200], [100, 150, 200])); // 0 profit
 
 //------------------------------------------------------------------------------------------------------------
 
@@ -52,3 +52,32 @@ function calculateRamadanFastingHours(startTimes, endTimes) {
 
 console.log(calculateRamadanFastingHours(['04:30', '05:00'], ['18:30', '18:00'])) // 27
 console.log(calculateRamadanFastingHours(['04:45'], ['18:15'])) // 13.5
+
+/************************************************************************************ ***********************/
+/** Q59
+ * Given an array of bird sightings where every element represents a bird type id, 
+ * determine the id of the most frequently sighted type. 
+ * If more than 1 type has been spotted that maximum amount, return the smallest of their ids.
+ */
+
+function getBirdsTypeMostFrequently(arr) {
+    if (!Array.isArray(arr))
+        arr = [arr];
+
+    let result = {};
+    let count = 0;
+    let mostBirdFrequently = null;
+
+    for (const id of arr) {
+        result[id] = (result[id] || 0) + 1;
+
+       if (result[id] > count || (result[id] === count && (mostBirdFrequently === null || id < mostBirdFrequently))) {
+            count = result[id];
+            mostBirdFrequently = id;
+        }
+    }
+
+    return mostBirdFrequently;
+}
+
+console.log(getBirdsTypeMostFrequently([1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4]));
