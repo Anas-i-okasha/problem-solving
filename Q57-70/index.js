@@ -12,12 +12,12 @@ function calculateSacrificeProfit (buyPrices, sellPrices) {
 
     let totalProfit = 0;
 
-    // for (let i=0; i < buyPrices.length; i++) {
-    //     if (!sheepSellPrice)
-    //         continue;
+    for (let i=0; i < buyPrices.length; i++) {
+        if (!sheepSellPrice)
+            continue;
 
-    //     totalProfit += sellPrices[i] - buyPrices[i];
-    // }
+        totalProfit += sellPrices[i] - buyPrices[i];
+    }
 
     return totalProfit;
 }
